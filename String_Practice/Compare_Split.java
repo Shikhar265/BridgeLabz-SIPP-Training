@@ -23,7 +23,10 @@ class Compare_Split
                 char ch = text.charAt(i);
                 if (ch == ' ') 
 		        {
-                    if (!temp.equals("")) words.add(temp);
+                    if (!temp.equals("")) 
+                    {
+                        words.add(temp);
+                    }
                     temp = "";
                 } 
                 else 
@@ -33,7 +36,10 @@ class Compare_Split
             } 
 	        catch (Exception e) 
 	        {
-                if (!temp.equals("")) words.add(temp);
+                if (!temp.equals("")) 
+                {
+                    words.add(temp);
+                }
                 break;
             }
         }
