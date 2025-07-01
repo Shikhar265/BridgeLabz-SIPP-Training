@@ -1,6 +1,8 @@
+package Workshop;
+
 import java.util.*;
 
-public class StudentGradesAnalyzer {
+public class Student_Data{
     static class Student {
         String name;
         String id;
