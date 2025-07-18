@@ -36,5 +36,6 @@ public class EduQuiz {
         System.out.println("\nFeedback:");
         int totalScore = calculateScore(correctAnswers, studentAnswers);
         System.out.println("\nTotal Score: " + totalScore + " out of 10");
+        sc.close();
     }
 }

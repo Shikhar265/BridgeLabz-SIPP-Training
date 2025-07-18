@@ -124,6 +124,6 @@ public class E_Commerce_Product {
     }
 
     public static void main(String[] args) {
-        new ProductCatalog().menu();
+        new E_Commerce_Product().menu();
     }
 }
