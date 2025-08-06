@@ -1,0 +1,27 @@
+public class Throw_Vs_Throws
+{
+    // Method declaration with 'throws' keyword
+    public static double calculateInterest(double amount, double rate, int years) throws IllegalArgumentException
+    {
+        if (amount < 0 || rate < 0)
+        {
+            throw new IllegalArgumentException("Amount or rate is negative");
+        }
+
+        // Simple interest calculation
+        return (amount * rate * years) / 100;
+    }
+
+    public static void main(String[] args)
+    {
+        try
+        {
+            double interest = calculateInterest(5000, 5.5, 2);
+            System.out.println("Calculated Interest: " + interest);
+        }
+        catch (IllegalArgumentException e)
+        {
+            System.out.println("Invalid input: Amount and rate must be positive");
+        }
+    }
+}
